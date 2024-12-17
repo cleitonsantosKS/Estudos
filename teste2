@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int contarOcorrencias(int numero, char digito) {
+    int contador = 0;
+    
+    string strNumero = to_string(numero);
+    
+    for (char c : strNumero) {
+        if (c == digito) {
+            contador++;
+        }
+    }
