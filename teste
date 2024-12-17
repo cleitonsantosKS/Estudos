@@ -1,0 +1,65 @@
+#include <iostream>
+using namespace std;
+
+int contarOcorrencias(int numero, char digito) {
+    int contador = 0;
+    // Converte o número para string
+    string strNumero = to_string(numero);
+    
+    // Conta quantas vezes o dígito aparece
+    for (char c : strNumero) {
+        if (c == digito) {
+            contador++;
+        }
+    }
+    
+    return contador;
+}
+
+int main() {
+    int numero;
+    char digito;
+    
+    // Solicita o número e o dígito
+    cout << "Digite um numero: ";
+    cin >> numero;
+    cout << "Digite o digito que deseja contar: ";
+    cin >> digito;
+    
+    // Chama a função e exibe o resultado
+    int resultado = contarOcorrencias(numero, digito);
+    cout << "O digito " << digito << " aparece " << resultado << " vez(es) no numero " << numero << endl;
+    
+    return 0;#include <iostream>
+using namespace std;
+
+int contarOcorrencias(int numero, char digito) {
+    int contador = 0;
+    // Converte o número para string
+    string strNumero = to_string(numero);
+    
+    // Conta quantas vezes o dígito aparece
+    for (char c : strNumero) {
+        if (c == digito) {
+            contador++;
+        }
+    }
+    
+    return contador;
+}
+
+int main() {
+    int numero;
+    char digito;
+    
+    // Solicita o número e o dígito
+    cout << "Digite um numero: ";
+    cin >> numero;
+    cout << "Digite o digito que deseja contar: ";
+    cin >> digito;
+    
+    // Chama a função e exibe o resultado
+    int resultado = contarOcorrencias(numero, digito);
+    cout << "O digito " << digito << " aparece " << resultado << " vez(es) no numero " << numero << endl;
+    
+    return 0;
